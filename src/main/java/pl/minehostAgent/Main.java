@@ -2,6 +2,7 @@ package pl.minehostAgent;
 
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 import pl.minehostAgent.data.DataLoader;
 
@@ -14,6 +15,8 @@ public final class Main extends JavaPlugin {
             dataLoader.load();
 
             super.onLoad();
+        } else {
+            System.out.println(ChatColor.RED + " Wersja " + Bukkit.getServer().getVersion() + " nie jest wspierana!");
         }
     }
 

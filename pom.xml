@@ -41,7 +41,7 @@
                             <goal>shade</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>/home/arturekdev/Pulpit/export plugins/</outputDirectory>
+                            <outputDirectory>C:\Users\artur\OneDrive\Desktop\dev plugins</outputDirectory>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
                         </configuration>
                     </execution>
