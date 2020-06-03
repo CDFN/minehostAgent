@@ -9,7 +9,6 @@ public final class Main extends JavaPlugin {
 
     @Override
     public void onLoad() {
-        System.out.println(Bukkit.getServer().getVersion());
         if (Bukkit.getServer().getVersion().contains("1.15") || Bukkit.getServer().getVersion().contains("1.14")) {
             DataLoader dataLoader = new DataLoader();
             dataLoader.load();
