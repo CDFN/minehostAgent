@@ -47,17 +47,14 @@ public class DataManager {
             }
         });
 
-        System.out.println();
-        System.out.println(ChatColor.GREEN + "           _      ___                   _   \n");
-        System.out.println(ChatColor.GREEN + "          | |    / _ \\                 | |  \n");
-        System.out.println(ChatColor.GREEN + " _ __ ___ | |__ / /_\\ \\ __ _  ___ _ __ | |_ \n");
-        System.out.println(ChatColor.GREEN + "| '_ ` _ \\| '_ \\|  _  |/ _` |/ _ \\ '_ \\| __|\n");
-        System.out.println(ChatColor.GREEN + "| | | | | | | | | | | | (_| |  __/ | | | |_ \n");
-        System.out.println(ChatColor.GREEN + "|_| |_| |_|_| |_\\_| |_/\\__, |\\___|_| |_|\\__|\n");
-        System.out.println(ChatColor.GREEN + "                        __/ |               \n");
-        System.out.println(ChatColor.GREEN + "                       |___/                ");
-        System.out.println();
-        System.out.println(ChatColor.GREEN + " Domyślne ustawienia serwera zalecane przez MINEHOST.PL zostały pomyślnie załadowane.");
-
+        plugin.getLogger().log(Level.INFO, "           _      ___                   _   \n");
+        plugin.getLogger().log(Level.INFO, "          | |    / _ \\                 | |  \n");
+        plugin.getLogger().log(Level.INFO, " _ __ ___ | |__ / /_\\ \\ __ _  ___ _ __ | |_ \n");
+        plugin.getLogger().log(Level.INFO, "| '_ ` _ \\| '_ \\|  _  |/ _` |/ _ \\ '_ \\| __|\n");
+        plugin.getLogger().log(Level.INFO, "| | | | | | | | | | | | (_| |  __/ | | | |_ \n");
+        plugin.getLogger().log(Level.INFO, "|_| |_| |_|_| |_\\_| |_/\\__, |\\___|_| |_|\\__|\n");
+        plugin.getLogger().log(Level.INFO, "                        __/ |               \n");
+        plugin.getLogger().log(Level.INFO, "                       |___/                ");
+        plugin.getLogger().log(Level.INFO, " Domyślne ustawienia serwera zalecane przez MINEHOST.PL zostały pomyślnie załadowane.");
     }
 }
