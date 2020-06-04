@@ -1,7 +1,0 @@
-name: minehostAgent
-version: 1.0-SNAPSHOT
-main: pl.minehostAgent.Main
-api-version: 1.13
-authors: [Lucyfer, _arturek]
-description: Najlepszy hosting serwerów minecraft MINEHOST.PL!
-website: https://minehost.pl
