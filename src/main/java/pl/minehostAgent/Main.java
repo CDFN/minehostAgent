@@ -12,7 +12,7 @@ public final class Main extends JavaPlugin {
     public void onLoad() {
         if (!Bukkit.getServer().getVersion().contains("1.15") && !Bukkit.getServer().getVersion().contains("1.14")) {
             System.out.println(ChatColor.RED + " Wersja " + Bukkit.getServer().getVersion() + " nie jest wspierana!");
-            return;
+            this.setEnabled(false);
         }
         DataManager dataManager = new DataManager(this, "bukkit.yml", "spigot.yml", "paper.yml");
         dataManager.loadDataFromConfig();
