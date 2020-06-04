@@ -21,6 +21,7 @@ public class DataManager {
         for (String fileName : filesToLoad) {
             serversConfiguration.put(fileName, YamlConfiguration.loadConfiguration(new File(fileName)));
             pluginsConfiguration.put(fileName, YamlConfiguration.loadConfiguration(new File(plugin.getDataFolder(), fileName)));
+            plugin.saveResource(fileName, false);
         }
     }
 

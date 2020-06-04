@@ -14,14 +14,8 @@ public final class Main extends JavaPlugin {
             System.out.println(ChatColor.RED + " Wersja " + Bukkit.getServer().getVersion() + " nie jest wspierana!");
             return;
         }
-        this.saveDefaultSettings();
         DataManager dataManager = new DataManager(this, "bukkit.yml", "spigot.yml", "paper.yml");
         dataManager.loadDataFromConfig();
     }
 
-    private void saveDefaultSettings() {
-        this.saveResource("bukkit.yml", false);
-        this.saveResource("spigot.yml", false);
-        this.saveResource("paper.yml", false);
-    }
 }
