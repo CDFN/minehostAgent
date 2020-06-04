@@ -41,7 +41,7 @@
                             <goal>shade</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>C:\Users\artur\OneDrive\Desktop\dev plugins</outputDirectory>
+                            <outputDirectory>./target</outputDirectory>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
                         </configuration>
                     </execution>
