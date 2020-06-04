@@ -15,6 +15,8 @@ public final class Main extends JavaPlugin {
             this.setEnabled(false);
         }
         DataManager dataManager = new DataManager(this, "bukkit.yml", "spigot.yml", "paper.yml");
+        dataManager.saveDefaultSettings();
+        dataManager.loadConfigurations();
         dataManager.loadDataFromConfig();
     }
 

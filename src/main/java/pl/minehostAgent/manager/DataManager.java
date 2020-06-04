@@ -13,15 +13,25 @@ import java.util.logging.Level;
 
 public class DataManager {
     private final Main plugin;
+    private final String[] filesToLoad;
     private final Map<String, FileConfiguration> serversConfiguration = new HashMap<>();
     private final Map<String, FileConfiguration> pluginsConfiguration = new HashMap<>();
 
     public DataManager(Main plugin, String... filesToLoad) {
         this.plugin = plugin;
+        this.filesToLoad = filesToLoad;
+    }
+
+    public void saveDefaultSettings() {
+        for (String fileName : filesToLoad) {
+            plugin.saveResource(fileName, false);
+        }
+    }
+
+    public void loadConfigurations() {
         for (String fileName : filesToLoad) {
             serversConfiguration.put(fileName, YamlConfiguration.loadConfiguration(new File(fileName)));
             pluginsConfiguration.put(fileName, YamlConfiguration.loadConfiguration(new File(plugin.getDataFolder(), fileName)));
-            plugin.saveResource(fileName, false);
         }
     }
 
